@@ -1,15 +1,12 @@
 package com.vetias.java.workshop.temperaturedata.beans;
 
-public class Temperature {
+public class TemperatureSensor implements Sensor  {
     private float temperature;
-    public Temperature(float aTemperature){
+    public TemperatureSensor(float aTemperature){
         temperature=aTemperature;
     }
+
     public float getReading(){
         return temperature;
-
-
     }    
     }
-
-
