@@ -62,5 +62,4 @@ public class Location {
                 ", country='" + country+ '\'' +
                 '}';
     }
-    
 }
