@@ -10,7 +10,7 @@ public class RegistrationTimeLeft {
         int minuteLeft = registrationEndTime.getMinute() - currentTime.getMinute();
         int secondsLeft = registrationEndTime.getSecond() - currentTime.getSecond();
         System.err.println("You have"+ hoursLeft + "hours,"
-                            + minuteLeft + "minutes, and"
+                            + minuteLeft + "minutes, and "
                             + secondsLeft +"second left to register.");
     }
 
