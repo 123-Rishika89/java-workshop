@@ -1,4 +1,4 @@
-package Main.java.com.vetias.java.workshop.Standardlibtandardlibtandardlib;
+package com.vetias.java.workshop.Standardlib;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

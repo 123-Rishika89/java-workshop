@@ -1,4 +1,4 @@
-package Main.java.com.vetias.java.workshop.basicshop.basicshop.basics;
+package com.vetias.java.workshop.basics;
 
 public class Calculator {
     
