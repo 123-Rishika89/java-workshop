@@ -1,4 +1,3 @@
-package com.vetias.java.workshop.basics;
 import java.util.Scanner;
 public class NameGenerated {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package main.java.com.vetias.javaworkshop.basics.arrays;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -13,3 +14,4 @@ public class Descending {
     }
     
 }
+

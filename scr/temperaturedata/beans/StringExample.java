@@ -1,4 +1,4 @@
-package com.vetias.java.workshop.temperaturedata.beans;
+
 import java.util.Arrays;
 
 public class StringExample {

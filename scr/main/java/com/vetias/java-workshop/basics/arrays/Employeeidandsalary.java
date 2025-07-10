@@ -1,5 +1,4 @@
-package com.vetias.java.workshop.arrays;
- import java.util.Arrays;
+import java.util.Arrays;
 public class Employeeidandsalary {
     public static void main(String[] args) {
         String[][] employee =new String[5][2];

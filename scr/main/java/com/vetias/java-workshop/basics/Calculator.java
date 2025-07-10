@@ -1,5 +1,3 @@
-package Main.java.com.vetias.java.workshop.basicshop.basicshop.basics;
-
 public class Calculator {
     
     public static void main(String[] args) {
