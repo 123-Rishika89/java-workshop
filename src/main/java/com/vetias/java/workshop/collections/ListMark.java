@@ -13,14 +13,20 @@ public class ListMark {
         marks.add("60");
         marks.add("70");
         marks.add("95");
-        marks.add("80");
         marks.add("100");
         Collections.sort(marks);
+        System.out.println(marks);
         System.out.println("Ascending Order");
         System.out.println(marks);
         System.out.println("Descending Order");
         Collections.sort(marks,Collections.reverseOrder());
         System.out.println(marks);
+        System.out.println("Highest Mark:");
+        Collections.sort(marks);
+        System.out.println(marks.getLast());
+
+    
+
         
     }
 
