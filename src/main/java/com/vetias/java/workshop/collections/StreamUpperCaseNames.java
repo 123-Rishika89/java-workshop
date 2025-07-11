@@ -14,9 +14,9 @@ public class StreamUpperCaseNames {
         names.stream()
         .filter(name -> name.startsWith("S") || name.startsWith("s"))
         .distinct().map(String::toUpperCase).forEach(System.out::println);
-        
+    }    
 
 
 }
-}
+
 
