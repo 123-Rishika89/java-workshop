@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 
-import com.vetias.java.workshop.lambda.Square;
-
 public class SquareTest{
 
     @Test

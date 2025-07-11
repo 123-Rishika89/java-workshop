@@ -1,7 +1,6 @@
 package com.vetias.java.workshop.collections;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class ListExample {
