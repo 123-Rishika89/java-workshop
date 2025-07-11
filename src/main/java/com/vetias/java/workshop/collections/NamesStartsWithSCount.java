@@ -1,21 +1,22 @@
 package com.vetias.java.workshop.collections;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class ListExample {
+public class NamesStartsWithSCount {
     public static void main(String[] args) {
         List<String>names = new ArrayList<>();
         names.add("Rishika");
         names.add("Pramisha");
         names.add("Dhanushya");
-
-         System.out.println(names);
-        for(int i = 0;i< names.size();i++){
-            System.out.println(names.get(i));
-        }
+        names.add("Srinithi");
+        names.add("Sree vishnuprirya");
+        long nameCount = names.stream()
+        .filter(name -> name.startsWith("S")).count();
+        System.out.println(nameCount);
 
     }
+
+
 
 }
