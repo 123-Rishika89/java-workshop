@@ -10,13 +10,6 @@ public class ArraySorting {
         markList.stream().sorted().forEach(System.out::println);
         markList.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
         System.out.println(markList.stream().max(Comparator.naturalOrder()).get());
-
-
-
-
-
-
-
     }
 
 }
