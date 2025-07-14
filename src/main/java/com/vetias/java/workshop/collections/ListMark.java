@@ -1,7 +1,7 @@
 package com.vetias.java.workshop.collections;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class ListMark {
         System.out.println(marks);
         System.out.println("Highest Mark:");
         Collections.sort(marks);
-        System.out.println(marks.getLast());
+        System.out.println(marks.getClass());
 
     
 
