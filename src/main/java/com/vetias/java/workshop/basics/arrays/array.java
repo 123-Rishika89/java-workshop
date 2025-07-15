@@ -1,4 +1,4 @@
-package main.java.com.vetias.java.workshop.basics.arrays;
+package com.vetias.java.workshop.basics.arrays;
 
 public class array {
     public static void main(String[] args){
@@ -9,7 +9,6 @@ public class array {
     }
     
 }
-
 
 
 
