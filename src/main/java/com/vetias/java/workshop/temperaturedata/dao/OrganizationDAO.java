@@ -1,13 +1,12 @@
 package com.vetias.java.workshop.temperaturedata.dao;
 
 import java.sql.Statement;
-import java.time.LocalDate;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.vetias.java.workshop.temperaturedata.beans.Oranganaization;
+import com.vetias.java.workshop.temperaturedata.beans.Organaization;
 import com.vetias.java.workshop.temperaturedata.dao.OrganizationDAO;
 
 public class OrganizationDAO {
@@ -27,7 +26,7 @@ public class OrganizationDAO {
             System.out.println("Error creating Table" +SqlException);  
         }
     }
-    public int save (Connection dbConnection, Oranganaization vet) {
+    public int save (Connection dbConnection, Organaization vet) {
         try (PreparedStatement preparedStatement = dbConnection.prepareStatement("""
             insert into organization (name, website, email, contact_number, 
             REGISTRATION_NO, description) values(?,?,?,?,?,?)
@@ -43,5 +42,25 @@ public class OrganizationDAO {
             System.out.println("Error inserting into table:"+sqlException);
         }
         return 0;
+    }
+    public Organaization findByName(Connection dbConnection, String name){
+        Organaization organaization = null;
+        try (PreparedStatement preparedStatement = dbConnection.prepareStatement("""
+                select * from organization where name = ?
+                """)) {
+                    preparedStatement.setString(1, name);
+                    ResultSet resultSet = preparedStatement.executeQuery();
+                    if(resultSet != null && resultSet.next()){
+                       organaization =new Organaization(resultSet.getString("name"),
+                       resultSet.getString("description"),
+                       resultSet.getString("website"),
+                       resultSet.getString("email"),
+                       resultSet.getString("contact_number"),
+                       resultSet.getLong("registration_no"),null);
+                    }    
+        } catch (SQLException exception) {
+            System.out.println("Exception while fetching the data"+exception);   
+        }
+        return organaization;
     }
 }

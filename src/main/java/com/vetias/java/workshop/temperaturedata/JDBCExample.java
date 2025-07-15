@@ -2,7 +2,7 @@ package com.vetias.java.workshop.temperaturedata;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import com.vetias.java.workshop.temperaturedata.beans.Oranganaization;
+import com.vetias.java.workshop.temperaturedata.beans.Organaization;
 import com.vetias.java.workshop.temperaturedata.dao.OrganizationDAO;
 public class JDBCExample {
     public static void main(String[] args) {
@@ -19,10 +19,12 @@ public class JDBCExample {
         }
         OrganizationDAO organizationDAO = new OrganizationDAO();
         organizationDAO.createTable(dbConnection);
-        Oranganaization vet = new Oranganaization("VET", "Vellar Education Trust:",
+        Organaization vet = new Organaization("VET", "Vellar Education Trust:",
          "www.vetias.ac.in","rishikas24csa@vetias.ac.in" ,"0423345678" ,
           123, null);
         organizationDAO.save(dbConnection,vet);
+        Organaization myOrganaization = organizationDAO.findByName(dbConnection, "VET");
+        System.out.println("My Organization is :" + myOrganaization); 
     }
 
 }
